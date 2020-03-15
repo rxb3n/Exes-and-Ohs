@@ -1,0 +1,21 @@
+function XO(str) {
+    var i = 0;
+  var ex = 0;
+  var oo = 0;
+  var result;
+  while (i < str.length) {
+    if (str[i] == "x") {
+      ex++;
+      i++;
+    } else if (str[i] == "o") {
+      oo++;
+      i++;
+    }
+  }
+if (ex == oo) {
+   result = true;
+} else {
+  result = false;
+}
+  return result;
+}
